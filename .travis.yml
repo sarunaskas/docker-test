@@ -18,5 +18,4 @@ deploy:
   project: docker-test-231508
   keyfile: gce.json
   verbosity: debug
-  on: 
-    - branch: master
+  on: master
