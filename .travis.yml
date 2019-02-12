@@ -4,8 +4,7 @@ services:
 - docker
 
 before_install:
-- openssl aes-256-cbc -K $encrypted_174f886956d0_key -iv $encrypted_174f886956d0_iv
-  -in gce.json.enc -out gce.json -d
+- openssl aes-256-cbc -K $encrypted_174f886956d0_key -iv $encrypted_174f886956d0_iv -in gce.json.enc -out gce.json -d
 - docker build -t sarunaskas/docker-test -f Dockerfile.dev .
 
 script:
